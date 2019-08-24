@@ -47,11 +47,17 @@ $(function() {
 
         $(this).toggleClass("active");
         $("#nav").toggleClass("active");
-
-
-
-
     });
 
+    /* collapse */
+
+    $("[data-collapse]").on("click", function(event){
+        event.preventDefault();
+
+        var $this = $(this),
+            blockId = $this.data('collapse');
+        $this.toggleClass("active")
+        $(blockId).slideToggle();
+    });
 
 });
