@@ -1300,6 +1300,12 @@ hr {
 
 @media (max-width: 770px) {
 
+    /*intro*/
+    
+    .intro{
+        min-height: 650px;
+    }
+
     /* Nav */
     .nav {
         display: none;
