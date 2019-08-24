@@ -181,10 +181,10 @@ hr {
     color: #fce38a;
 }
 
-/*nav toggle*/
-.nav-toggle{
+/* Nav toggle */
+.nav-toggle {
     width: 30px;
-    padding: 10px  0;
+    padding: 10px 0;
     display: none;
 
     font-size: 0;
@@ -204,7 +204,7 @@ hr {
     outline: 0;
 }
 
-.nav-toggle__item{
+.nav-toggle__item {
     display: block;
     width: 100%;
     height: 3px;
@@ -219,41 +219,41 @@ hr {
     margin: auto;
 
     transition: background .2s linear;
-}    
+}
 
-.nav-toggle.active .nav-toggle__item{
+.nav-toggle.active .nav-toggle__item {
     background: none;
 }
 
 .nav-toggle__item:before,
-.nav-toggle__item:after{
+.nav-toggle__item:after {
     content: "";
     width: 100%;
     height: 3px;
 
-    position: absolute;
-
     background-color: #fff;
+
+    position: absolute;
     left: 0;
     z-index: 1;
 
     transition: transform .2s linear;
 }
 
-.nav-toggle__item:before{
+.nav-toggle__item:before {
     top: -8px;
 }
 
-.nav-toggle__item:after{
+.nav-toggle__item:after {
     bottom: -8px;
 }
 
-.nav-toggle.active .nav-toggle__item:before{
+.nav-toggle.active .nav-toggle__item:before {
     transform-origin: left top;
-    transform: rotate(45deg) translate3d(0px, -2px, 0);
+    transform: rotate(45deg) translate3d(0px, -2px, 0)
 }
 
-.nav-toggle.active .nav-toggle__item:after{
+.nav-toggle.active .nav-toggle__item:after {
     transform-origin: left bottom;
     transform: rotate(-45deg) translate3d(0px, 3px, 0);
 }
@@ -680,16 +680,22 @@ hr {
 
 /* Reviews */
 .reviews {
-    padding: 0 110px;
     position: relative;
 }
 
+.reviews .slick-slider{
+    padding: 0 110px;
+}
+
 .reviews__item {
+    min-height: 210px;
     padding-left: 255px;
     position: relative;
 }
 
 .reviews__photo {
+    max-width: 150px;
+    max-height: 150px;
     display: block;
 
     border: 2px solid #95e1d3;
@@ -727,9 +733,14 @@ hr {
     background-color: #f38181;
 }
 
-.reviews__btn {
+.slick-arrow {
+    display: block;
     font-size: 0;
     color: transparent;
+
+    border: 0;
+    background: 0;
+    cursor: pointer;
 
     position: absolute;
     top: 50%;
@@ -737,7 +748,11 @@ hr {
     transform: translateY(-50%);
 }
 
-.reviews__btn:after {
+.slick-arrow:focus{
+    outline: 0;
+}
+
+.slick-arrow:after {
     content: "";
     display: block;
     width: 16px;
@@ -746,13 +761,13 @@ hr {
     border-top: 2px solid #ccc;
     border-left: 2px solid #ccc;
 }
-
-.reviews__btn--pref {
+ 
+.slick-prev {
     left: -10px;
     transform: rotate(-45deg);
 }
 
-.reviews__btn--next {
+.slick-next {
     right: 0;
     transform: rotate(135deg);
 }
@@ -1344,7 +1359,7 @@ hr {
         border-bottom: 0;
     }
     /*reviews*/
-    .reviews{
+    .reviews .slick-slider{
         padding: 0 60px;
     }
 
@@ -1603,10 +1618,10 @@ hr {
 
     /*reviews*/
 
-    .reviews{
+    .reviews .slick-slider{
         padding: 0;
     }
-    .reviews__btn{
+    .slick-arrow{
         top: 18%;
     }
 

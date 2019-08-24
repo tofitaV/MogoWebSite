@@ -56,8 +56,16 @@ $(function() {
 
         var $this = $(this),
             blockId = $this.data('collapse');
-        $this.toggleClass("active")
-        $(blockId).slideToggle();
+        $this.toggleClass("active");
+
+    });
+
+    /* slider */
+    $("[data-slider]").slick({
+        infinite: true,
+        fade: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
     });
 
 });
