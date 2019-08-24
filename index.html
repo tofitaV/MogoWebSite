@@ -11,22 +11,22 @@
 </head>
 <body>
 
-<header class="header active">
+<header class="header" id="header">
     <div class="container">
         <div class="header__inner">
-            <div class="header__logo">ToF1</div>
+            <div class="header__logo" data-scroll="#intro">ToF1</div>
             
-            <nav class="nav">
-                <a class="nav__link active" href="#">About</a>
-                <a class="nav__link" href="#">Service</a>
-                <a class="nav__link" href="#">Blog</a>
-                <a class="nav__link" href="#">Work</a>
-                <a class="nav__link" href="#">Contact</a>
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#about">About</a>
+                <a class="nav__link" href="#" data-scroll="#services">Service</a>
+                <a class="nav__link" href="#" data-scroll="#blog">Blog</a>
+                <a class="nav__link" href="#" data-scroll="#works">Work</a>
+                <a class="nav__link" href="#" data-scroll="#footer">Contact</a>
                 <a class="nav__link" href="#"><i class="fas fa-shopping-cart"></i></a>
                 <a class="nav__link" href="#"><i class="fas fa-search"></i></a>
             </nav>
             
-            <button class="nav-toggle active" type="button">
+            <button class="nav-toggle active" id="nav_toggle" type="button">
                 <span class="nav-toggle__item">Menu</span>
             </button>
 
@@ -36,8 +36,8 @@
 
 <div class="page">
 
-
-    <div class="intro">
+    <!-- intro -->
+    <div class="intro" id="intro">
         <div class="container">\
             <div class="intro__inner">
                 <h2 class="intro__suptitle">Creative Template</h2>
@@ -73,11 +73,8 @@
             </div>
         </div>
         
-        
-        
-        
-        
-    <section class="section">
+    <!-- about --> 
+    <section class="section" id="about">
         <div class="container">
         
             <div class="section__header">
@@ -123,6 +120,7 @@
         </div><!--container-->
     </section>
 
+    <!-- statistics -->
     <div class="statistics">
         <div class="container">
             <div class="stat">
@@ -150,7 +148,8 @@
         </div>
     </div>
 
-    <section class="section">
+    <!-- Services -->
+    <section class="section" id="services">
         <div class="container">
         
             <div class="section__header">
@@ -202,7 +201,7 @@
             
     </section>
 
-
+    <!-- devices -->
     <section class="section section--devices">
         <div class="container">
         
@@ -218,6 +217,7 @@
         </div>
     </section>
 
+    <!-- wedo -->
     <div class="section">
         <div class="container">
         
@@ -275,7 +275,7 @@
         </div>
     </div>
 
-
+    <!-- reviews 1 -->
     <div class="section section--gray">
         <div class="container">
         
@@ -295,6 +295,7 @@
         </div>
     </div>
 
+    <!-- team -->
     <section class="section">
         <div class="container">
         
@@ -405,6 +406,7 @@
         </div><!--container-->
     </section>
 
+    <!-- logos -->
     <div class="section section--gray">
         <div class="container">
         
@@ -432,7 +434,8 @@
         </div>
     </div>
 
-    <section class="section">
+    <!-- works -->
+    <section class="section" id="works">
         <div class="container">
             
             <div class="section__header">
@@ -511,6 +514,7 @@
                 </div>
     </section>
 
+    <!-- reviews 2 -->
     <div class="section">
         <div class="container">
         
@@ -530,6 +534,7 @@
         </div>
     </div>
 
+    <!-- clients -->
     <div class="section section--clients">
         <div class="container">
             <div class="section__header">
@@ -575,7 +580,8 @@
         </div><!--container-->
     </div>
 
-    <section class="section">
+    <!-- blog -->
+    <section class="section" id="blog">
         <div class="container">
         
             <div class="section__header">
@@ -683,6 +689,7 @@
         </div><!--container-->
     </section>
 
+    <!-- map -->
     <section class="section section--map">
         <div class="container">
             <div class="map">
@@ -697,8 +704,8 @@
     </section>
 
 
-
-    <footer class="footer">
+    <!-- footer -->
+    <footer class="footer" id="footer">
         <div class="container">
             
             <div class="footer__inner">
@@ -789,7 +796,7 @@
                             <img src="assets/images/instagram/7.jpg" alt="">
                         </a>
                         <a class="instagram__item" href="#" target="_blank">
-                            <img src="assets/images/instagram/8jpg" alt="">
+                            <img src="assets/images/instagram/1.jpg" alt="">
                         </a>
                         <a class="instagram__item" href="#" target="_blank">
                             <img src="assets/images/instagram/9.jpg" alt="">
@@ -811,6 +818,10 @@
 
 
 </div><!--page-->>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="assets/js/app.js"></script>
 
 </body>
 </html>
